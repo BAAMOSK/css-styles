@@ -26,6 +26,7 @@ body {
     width: 350px;
     height: 350px;
     border: 10px solid orange;
+    box-shadow: 0 0 150px orange;
     border-radius: 100%;
     background: radial-gradient(yellow, orange, red);
 }
@@ -52,6 +53,39 @@ body {
     right: 0px;
 }
 
+.cheek {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    left: -60px;
+    top: 15px;
+    border: 5px solid red;
+    background: orange !important;
+}
+
+.cheek1 {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    border: 5px solid red;
+    background: orange !important;
+    top: 15px;
+    right: -60px;
+}
+
+/*.cheek {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    top: 27px;
+    left: -51px;
+    background-color: red !important;
+}
+
+.cheek:first-child {
+    right: 12px;
+}
+*/
 .mouth {
     width: 50px;
     height: 30px;
