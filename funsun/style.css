@@ -1,0 +1,61 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: #151843;
+}
+
+//This is the whole entire container
+#main {
+    position: relative;
+    background: #151843;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#sun_main {
+    position: absolute;
+    right:  100px;
+    top: 90px;
+    width: 350px;
+    height: 350px;
+    z-index: 1000;
+}
+
+#sun {
+    width: 350px;
+    height: 350px;
+    border: 10px solid orange;
+    border-radius: 100%;
+    background: radial-gradient(yellow, orange, red);
+}
+
+#face > * {
+    background: black;
+    position: absolute;
+}
+
+#face {
+    width: 140px;
+    position: relative;
+    top: 164px;
+    left: 105px;
+}
+
+.eye {
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+}
+
+.eye:first-child {
+    right: 0px;
+}
+
+.mouth {
+    width: 50px;
+    height: 30px;
+    border-radius: 10px 10px 55px 55px;
+    top: 33px;
+    left:  44px;
+}
