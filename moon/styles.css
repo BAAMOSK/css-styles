@@ -56,7 +56,7 @@ p {
     width: 28px;
     height: 28px;
     border-radius: 100%;
-    animation-name: blink;
+    /* animation-name: blink; */
     animation-duration: 4s;
     animation-delay: 2s;
     animation-iteration-count: infinite;

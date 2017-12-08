@@ -198,8 +198,11 @@ body {
     right: 0px;
 }
 
-.st10 {
-    fill: none;
-    stroke: #000;
-    stroke-miterlimit: 10;
-}
+/*.sunshine {
+    position: relative;
+    top: 100px;
+    left: 100px;
+    z-index: -1;
+    height: 500px;
+    width: 500px;
+}*/
