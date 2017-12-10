@@ -211,30 +211,3 @@ body {
     right: 0px;
 }
 
-#rays {
-    background: orange;
-    width: 400px;
-    height: 400px;
-    position: relative;
-    text-align: center;
-    -webkit-transform: rotate(20deg);
-    -moz-transform: rotate(20deg);
-    -ms-transform: rotate(20deg);
-    -o-transform: rotate(20deg);
-    z-index: -10;
-}
-
-#rays:before {
-    content:"";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 400px;
-    width: 400px;
-    background: orange;
-    -webkit-transform: rotate(135deg);
-    -moz-transform: rotate(135deg);
-    -ms-transform: rotate(135deg);
-    -o-transform: rotate(135deg);
-    z-index: -10;
-}
