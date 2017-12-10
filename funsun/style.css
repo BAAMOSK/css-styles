@@ -32,14 +32,14 @@ body {
     */
 }
 
-#sun {
+//#sun {
     width: 350px;
     height: 350px;
     border: 10px solid orange;
     border-radius: 100%;
     background: radial-gradient(yellow, orange, red);
     animation: glow 4s ease-in-out infinite;
-    //transform: rotate(20deg);
+    transform: rotate(20deg);
 }
 
 /*#sun:before {
@@ -211,3 +211,19 @@ body {
     right: 0px;
 }
 
+.cls-1 {
+    animation: rays 1s infinite;
+}
+
+@keyframes rays {
+    0%, 100% {
+        background-color: red !important;
+    }
+    50% {
+        background-color: orange !important;
+    }
+}
+
+@keyframes stars {
+
+}
