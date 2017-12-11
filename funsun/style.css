@@ -2,6 +2,7 @@ body {
     padding: 0;
     margin: 0;
     background: #151843;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 //This is the whole entire container
@@ -16,9 +17,6 @@ body {
 }
 
 #sun_main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: #306efe linear-gradient(120deg, #30cde2 0, #306efe 100%) no-repeat;
     height: 100vh;
     width: 100vw;
@@ -211,16 +209,17 @@ body {
     right: 0px;
 }
 
-.cls-1 {
-    animation: rays 1s infinite;
+#rays {
+    animation: rays 60s linear infinite;
+    transform-origin: center;
 }
 
 @keyframes rays {
-    0%, 100% {
-        background-color: red !important;
+    100% {
+        transform: rotate(0deg);
     }
-    50% {
-        background-color: orange !important;
+    0% {
+        transform: rotate(360deg);
     }
 }
 
