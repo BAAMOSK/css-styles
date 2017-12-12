@@ -318,5 +318,43 @@ body {
     }
 }
 
-    #stars {background: #151843;}
+.contact {
+    padding: 5%;
+    color: white;
+    //background: gray;
+    background: #151843;
+}
 
+form {
+    text-align: center;
+    //font-size: 2em; 
+    padding: 15px;
+    color: #151843;
+    background: white;
+    border-radius: 50px;
+}
+
+form label {
+    //display: block;
+}
+
+.contact-form input {
+    font-size: 1.8em;
+    color: #151843;
+    width: 100%;
+    border: none;
+    border-bottom:  5px solid #151843;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    outline: none;
+}
+
+.contact-form button {
+    margin: 8%;
+    padding: 2%;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background: #151843;
+    font-size: 2em;
+}
