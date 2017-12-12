@@ -185,15 +185,6 @@ body {
     right: 12px;
 }
 */
-.mouth {
-    //uncomment for mouth width: 50px;
-    height: 36px;
-    background: none !important;
-    border-radius: 10px 10px 55px 55px;
-    box-shadow: inset 0px -10px 0px black;
-    top: 33px;
-    left: 44px;
-}
 
 .cloud-container {
     display: flex;
@@ -358,3 +349,183 @@ form label {
     background: #151843;
     font-size: 2em;
 }
+
+.moon-container {
+    margin: 10%;
+}
+
+.moon {
+    height: 700px;
+    width: 700px;    
+    border-radius: 100%;
+    background-color: #67C5F8;
+    box-shadow: 
+        inset -20px 10px 0px #B1E1FB,
+        inset 30px -30px 0px #269AD9;
+}
+
+.face > * {
+    position: absolute;
+    background-color: #1B1F47;
+}
+
+.face {
+    position: relative;
+    width: 140px;
+    top: 164px;
+    left: 105px;
+}
+
+.left-eye {
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+}
+
+.right-eye {
+    height: 80px;
+    width: 80px;
+    left: 300px;
+    border-radius: 100%;
+}
+
+.mouth {
+    height: 78px;
+    width: 190px;
+    top:105px;
+    left: 100px;
+    border-radius: 10px 10px 55px 55px;
+}
+
+.tongue {
+    position: relative;
+    height: 32px;
+    width: 69px;
+    background-color: #E43438;
+    border-radius: 10px 10px 55px 55px;
+    top: 60px;
+    left: 77px;
+}
+
+.crater {
+    position: absolute;
+    border-radius: 100%;
+    background-color: #269AD9;
+}
+
+.crater:nth-child(4) {
+    width: 41px;
+    height: 41px;
+    right: 165px;
+    top: 125px;
+}
+.crater:nth-child(5) {
+    width: 55px;
+    height: 55px;
+    left: 24px;
+    top: 351px;
+}
+.crater:nth-child(6) {
+    width: 20px;
+    height: 20px;
+    left: 40px;
+    top: 190px;
+}
+.crater:nth-child(7) {
+    width: 40px;
+    height: 40px;
+    left: 55px;
+    bottom: 40px;
+}
+.crater:nth-child(8) {
+    width: 100px;
+    height: 100px;
+    background-color: #67C5F8;
+    box-shadow: inset 10px -10px 0px #269AD9;
+    left: 362px;
+    bottom: 8px;
+}
+
+//.crater:nth-child(9) {
+    width: 140px;
+    height: 140px;
+    background-color: #67C5F8;
+    box-shadow: inset 10px -10px 0px #269AD9;
+    left: 240px;
+    top: 350px;
+}
+
+.crater:nth-child(10) {
+    width: 100px;
+    height: 100px;
+    background-color: #67C5F8;
+    box-shadow: inset 10px -10px 0px #269AD9;
+    left: 337px;
+    top: 143px;
+}
+
+.crater:nth-child(11) {
+    width: 60px;
+    height: 60px;
+    background-color: #67C5F8;
+    box-shadow: inset 10px -10px 0px #269AD9;
+    left: 469px;
+    top: 309px;
+}
+
+
+.crater:nth-child(12) {
+    background: white;
+    width: 41px;
+    height: 41px;
+    right: 65px;
+    top: 10px;
+}
+.crater:nth-child(13) {
+    background: white;
+    width: 41px;
+    height: 41px;
+    left: 335px;
+    top: 10px;
+}
+
+.outer_crater {
+    box-sizing: content-box;
+    height: 0;
+    border: 20px solid rgba(0, 0, 0, 0);
+//    border-top: solid;
+    color: rgba(0, 0, 0, 1);
+    text-overflow: clip;
+    position: relative;
+    overflow: visible;
+}
+
+.outer_crater:nth-child(2) {
+    width: 60px;
+    border-bottom: 22px solid #269AD9;
+    transform: rotate(-54deg);
+    top: 112px;
+    left: 4px;
+}
+
+.outer_crater:nth-child(3) {
+    width: 96px;
+    border-bottom: 30px solid #B1E1FB;
+    transform: rotate(72deg);
+    top: 168px;
+    left: 631px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
