@@ -554,7 +554,7 @@ footer {
 
 .cross1::before {
     top: 40px;
-    left: -35px;
+    left: -40px;
     background-color: yellow;
 }
 
@@ -661,19 +661,9 @@ footer {
     left: 700px;
     width: 70px;
     height: 50px;
-    background: url('star-sheet.png') no-repeat;
-    animation: play .8s steps(55) infinite;
     transform: scale(2);
 }
 
-@keyframes play {
-    0% {
-        background-position: 0px;
-    }
-    100% {
-        background-position: -3519px;
-    }
-}
 
 
 
