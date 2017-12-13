@@ -6,6 +6,9 @@ body {
     font-size: 2.9em;
 }
 
+hr {
+    width: 80%;
+}
 //This is the whole entire container
 #header {
     display: flex;
@@ -346,7 +349,7 @@ form label {
     border-radius: 50px;
     color: #151843;
     background: red;
-    border: 10px solid #151843;
+    border: 15px solid #151843;
     font-size: 2em;
 }
 
@@ -670,8 +673,6 @@ footer {
     top: 200px;
     left: 700px;
     width: 70px;
-    height: 50px;
-    transform: scale(2);
 }
 
 .background {
