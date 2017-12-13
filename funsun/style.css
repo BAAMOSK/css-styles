@@ -549,7 +549,7 @@ footer {
     top: -170px;
     left: -100px;
     background-color: yellow;
-    transform: scale(0.7);
+    transform: scale(0.5);
 }
 
 .cross1::before {
@@ -562,8 +562,8 @@ footer {
     position: relative;
     top: 0;
     right: 0;
-    width: 150px;
-    height: 150px;
+    width: 50px;
+    height: 50px;
     background-color: green;
 }
 
@@ -579,12 +579,12 @@ footer {
     right: -25px;
     width: 50px;
     height: 50px;
-    background-color: red;
+    background-color: #151843;
     border-radius: 50%;
 }
 
 .circle1::after {
-    content:"pop";
+    content:"";
     position: relative;
     bottom: 0px;
     left: -50px;
@@ -594,16 +594,16 @@ footer {
     border-radius: 50%;
 }
 
-/*.circle2 {
+.circle2 {
     position: relative;
     top: -25px;
     right: -25px;
     width: 50px;
     height: 50px;
-    background-color: yellow;
+    background-color: #151843;
     border-radius: 50%;
 }
-
+/*
 .circle2::after {
     content: "";
     position: relative;
@@ -616,12 +616,64 @@ footer {
 }
 */
 
+.circle3 {
+    position: relative;
+    bottom: 126px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    background-color: #151843;
+    border-radius: 50%;
+}
+.circle4 {
+    position: relative;
+    bottom: 126px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    background-color: #151843;
+    border-radius: 50%;
+}
 
+.dot {
+    position: relative;
+    bottom: 228px;
+    left: 766px;
+    width: 30px;
+    height: 30px;
+    background: purple;
+    border-radius: 100%;
+}
 
+.hole {
+    position: relative;
+    top: 350px;
+    right: 55px;
+    height: 50px;
+    width: 50px;
+    border: 10px solid orange;
+    border-radius: 100%;
+}
 
+.supa-star {
+    position: relative;
+    top: 200px;
+    left: 700px;
+    width: 70px;
+    height: 50px;
+    background: url('star-sheet.png') no-repeat;
+    animation: play .8s steps(55) infinite;
+    transform: scale(2);
+}
 
-
-
+@keyframes play {
+    0% {
+        background-position: 0px;
+    }
+    100% {
+        background-position: -3519px;
+    }
+}
 
 
 
