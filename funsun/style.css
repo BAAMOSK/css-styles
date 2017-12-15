@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Shadows Into Light', 'roboto', cursive;
     overflow-x: hidden;
     font-size: 2.5em;
 }
@@ -23,16 +23,46 @@ hr {
 }
 
 #sun-rays {
-    transform-origin: center;
-    animation: spin 60s linear infinite;
+    -webkit-animation: spin 180s linear infinite;
+    -moz-animation: spin 180s linear infinite;
+    -o-animation: spin 180s linear infinite;
+    animation: spin 180s linear infinite;
+    transform-origin: center center;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes spin {
     0% {
-        transform: rotate(-360deg);
+        transform: rotate(0deg);
     }
     100% {
-        transform: rotate(0deg);
+        transform: rotate(360deg);
     }
 }
 
@@ -213,13 +243,10 @@ hr {
 }
 
 @media only screen and (min-device-width: 1850px) {
-    body {
-        font-size: 2.2em;
-    }
     .cloud:nth-child(4) {
         bottom: 100px;
         right: 800px;
-        transform: scale(1.4);
+        transform: scale(1);
     }
 }
 
@@ -232,10 +259,6 @@ hr {
 .projects h2, .projects h3 {
     margin: 0;
     padding: 5%;
-}
-
-[class*="project-"] {
-
 }
 
 .description {
