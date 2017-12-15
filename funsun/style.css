@@ -152,8 +152,6 @@ hr {
     }
     .main {
         display: grid;
-        /*grid-template-row: 10px 10px 10px;
-        grid-template-column: 310px 310px 310px;*/
     }
     .sun-container {
         width: 50vw;
@@ -186,6 +184,14 @@ hr {
         right: 630px;
         transform: scale(1);
         animation: clouds 4s alternate infinite;
+    }
+    .projects {
+        display: grid;
+        grid-template-columns: 33.333333% 33.333333% 33.333333%;
+    }
+    img {
+        padding: 0 5%;
+        width: 90%;
     }
 }
 
