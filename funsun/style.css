@@ -3,7 +3,6 @@ body {
     margin: 0;
     font-family: cursive, 'Shadows Into Light';
     overflow-x: hidden;
-//  font-size: 2.5em;
 }
 
 hr {
@@ -18,7 +17,6 @@ hr {
 .main {
     height: 100%;
     width: 100vw;
-//    padding-bottom: 10%;
     background: #306efe linear-gradient(120deg, #30cde2 0, #306efe 100%) no-repeat;
 }
 
@@ -261,8 +259,8 @@ form {
 }
 
 .moon {
-    height: 350px;
-    width: 350px;    
+    height: 320px;
+    width: 320px;    
     border-radius: 100%;
     background-color: #67C5F8;
     box-shadow: 
@@ -271,6 +269,7 @@ form {
 }
 
 .face > * {
+    width: 140px;
     position: relative;
     background-color: #1B1F47;
 }
@@ -376,31 +375,32 @@ form {
     bottom: 300px;
 }
 
-.outer_crater {
+/* .outer_crater {
     box-sizing: content-box;
     height: 0;
     border: 20px solid rgba(0, 0, 0, 0);
     color: rgba(0, 0, 0, 1);
     text-overflow: clip;
     position: relative;
-    overflow: visible;
+    overflow: hidden;
 }
 
 .outer_crater:nth-child(2) {
-    width: 60px;
-    border-bottom: 22px solid #269AD9;
-    transform: rotate(-53deg);
-    right: 26px;
-    bottom: 286px;
+    width: 36px;
+    border-bottom: 24px solid #269AD9;
+    transform: rotate(-62deg);
+    right: 34px;
+    bottom: 270px;
 }
 
 .outer_crater:nth-child(3) {
-    width: 39px;
-    border-bottom: 18px solid #B1E1FB;
-    transform: rotate(34deg);
-    bottom: 369px;
-    left: 241px;
+    width: 30px;
+    border-bottom: 13px solid #B1E1FB;
+    transform: rotate(52deg);
+    bottom: 333px;
+    left: 261px;
 }
+*/
 
 /* .cross {
     width: 40px;
@@ -622,11 +622,6 @@ form {
         padding: 10%;
     }
 
-    .contact-form {
-    }
-
-    .moon-container {
-    }
 }
 
 @media only screen and (min-device-width: 945px) and (max-device-width: 1199px) {
