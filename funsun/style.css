@@ -16,10 +16,10 @@ hr {
 }
 
 .main {
-    background: #306efe linear-gradient(120deg, #30cde2 0, #306efe 100%) no-repeat;
     height: 100%;
     width: 100vw;
     padding-bottom: 10%;
+    background: #306efe linear-gradient(120deg, #30cde2 0, #306efe 100%) no-repeat;
 }
 
 #sun-rays {
@@ -147,10 +147,15 @@ hr {
 }
 
 /***** PROJECTS SECTION *****/
-
 .projects {
     color: white;
     text-align: center;
+}
+
+.projects-title {
+    margin: 0;
+    padding: 2%;
+    background: #333;
 }
 
 .projects h3 {
@@ -200,7 +205,7 @@ hr {
 @media only screen and (min-device-width: 768px) {
 
     body {
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
     .main {
         display: grid;
@@ -237,16 +242,22 @@ hr {
         transform: scale(1);
         animation: clouds 4s alternate infinite;
     }
-    .projects {
+    
+
+    .project-container {
         display: flex;
+        justify-content: space-evenly;
+        padding: 2% 0;
     }
 
     img {
         padding: 0 5%;
-        width: 90%;
+        max-width: 90%;
     }
 
     .project-1, .project-2, .project-3 {
+        border-radius: 50px;
+        width: 30%;
         display:flex;
         flex-direction: column;
         justify-content: space-between;
@@ -312,10 +323,16 @@ hr {
 }
 
 @media only screen and (min-device-width: 1850px) {
+    body {
+        font-size: 2.2em;
+    }
     .cloud:nth-child(4) {
         bottom: 100px;
         right: 800px;
         transform: scale(1);
+    }
+    .demo {
+        padding: 10px;
     }
 }
 
@@ -448,26 +465,18 @@ form {
     bottom: 40px;
 }
 .crater:nth-child(8) {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     background-color: #67C5F8;
     box-shadow: inset 10px -10px 0px #269AD9;
     left: 240px;
     bottom: 48px;
 }
 
-.crater:nth-child(9) {
-    width: 140px;
-    height: 140px;
-    background-color: #67C5F8;
-    box-shadow: inset 10px -10px 0px #269AD9;
-    left: 240px;
-    top: 350px;
-}
 
 .crater:nth-child(10) {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     background-color: #67C5F8;
     box-shadow: inset 10px -10px 0px #269AD9;
     left: 305px;
