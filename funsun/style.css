@@ -252,15 +252,17 @@ form {
 }
 
 .moon-container {
-    display: flex;
-    margin: 10% 0;
-    justify-content: center;
-    align-items: center;
+    //display: flex;
+    //height: 320px;
+    //width: 320px;
+    //justify-content: center;
+    //align-items: center;
 }
 
 .moon {
-    height: 320px;
-    width: 320px;    
+    height: 300px;
+    width: 300px;    
+    position: absolute;
     border-radius: 100%;
     background-color: #67C5F8;
     box-shadow: 
@@ -268,7 +270,7 @@ form {
         inset 14px -7px 2px #269AD9;
 }
 
-.face > * {
+/*.face > * {
     width: 140px;
     position: relative;
     background-color: #1B1F47;
@@ -306,12 +308,12 @@ form {
 }
 
 .crater {
-    position: relative;
+    //position: relative;
     border-radius: 100%;
     background-color: #269AD9;
 }
-
-.crater:nth-child(4) {
+*/
+/*.crater:nth-child(4) {
     width: 17px;
     height: 17px;
     top: 5px;
@@ -332,6 +334,7 @@ form {
     left: 5px;
     bottom: 85px;
 }
+
 .crater:nth-child(8) {
     width: 90px;
     height: 56px;
@@ -359,7 +362,6 @@ form {
     bottom: 225px;
 }
 
-
 .crater:nth-child(12) {
     background: white;
     width: 20px;
@@ -367,13 +369,14 @@ form {
     left: 15px;
     bottom: 280px;
 }
+
 .crater:nth-child(13) {
     background: white;
     width: 20px;
     height: 20px;
     left: 155px;
     bottom: 300px;
-}
+}*/
 
 /* .outer_crater {
     box-sizing: content-box;
