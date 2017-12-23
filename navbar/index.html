@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Nav Bar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="toggle">
+            <p class="menu">XXX</p></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+        </ul>
+    </nav>
+    <script>
+        let menu = document.querySelector('.menu');
+        let list = document.querySelector('ul');
+        
+        menu.addEventListener('click', function() {
+            list.classList.toggle('active');
+        });
+
+        list.addEventListener('click', function() {
+            list.classList.toggle('active');
+            console.log('go to the page');
+        });
+
+    </script>
+</body>
