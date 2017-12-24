@@ -10,7 +10,8 @@
 </template>
 
 <script>
-    import db from './firebaseInit'
+    import cats from './firebaseInit'
+
     export default {
         name: 'dashboard',
         data () {
@@ -18,9 +19,8 @@
                 employees: []            
             }
         }/*,
-        created: function () {
-        console.log('yolo');
-            db.collection('employees').get().then
+        created () {
+             db.collection('employees').get().then
             (querySnapshot => {
                 querySnapshot.forEach(doc => {
                     console.log('hello');

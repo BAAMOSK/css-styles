@@ -4,6 +4,6 @@ import firebaseConfig from './firebaseConfig'
 
 const firebaseApp = firebase.initalizeApp(firebaseConfig)
 
-let db = firebaseApp.database()
-let employee_data = db.ref('employees')
+console.log('It is connecting the datbase.')
 
+export default firebaseApp.firestore()
