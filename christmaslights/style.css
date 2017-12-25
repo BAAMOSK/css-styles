@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    overflow: hidden;
+}
+
+ul {
+    position: absolute;
+    width:  100%;
+    margin: 20px 0 0;
+    padding: 0;
+    border-top: 2px solid gray;
+    display: flex;
+}
+
+ul li {
+    position: relative;
+    width: 24px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255,255,255,1);
+    margin: 25px;
+    list-style: none;
+    top: -20px;
+}
+
+ul li:before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 8px;
+    backgrond: white;
+    top: -7px;
+    left: 7px;
+}
+
+ul li:after {
+    content: '';
+    position: absolute;
+    top: -24px;
+    left: 12px;
+    width: 74px;
+    height: 26px;
+    border-bottom: 2px solid gray;
+    border-radius: 50%;
+}
+
+ul li:last-child:after {
+    border-bottom: none;
+}
+
+ul li:nth-child(3n+1) {
+    background: rgba(255,255,0,1);
+    animation: blink1 1.5s linear infinite;
+}
+
+@keyframes blink1 {
+    0% {
+        background: rgba(255, 255, 0, .2);
+    }
+    50% {
+        background: rgba(255, 255, 0, 1);
+        box-shadow: 0 0 25px rgba(255, 255, 0, 1), 0 0 45px rgba(255, 255, 0, 1);
+    }
+    100% {
+        background: rgba(255, 255, 0, .2);
+    }
+}
+
+ul li:nth-child(3n+2) {
+    background: rgba(255, 0, 255, 1);
+    animation: blink2 1.5s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes blink2 {
+    0% {
+        background: rgba(255, 0, 255,.2);
+    }
+    50% {
+        background: rgba(255, 0, 255, 1);
+        box-shadow: 0 0 25px rgba(255, 0, 255, 1), 0 0 45px rgba(255, 0, 255, 1);
+    }
+    100% {
+        background: rgba(255, 0, 255,.2);
+    }
+}
+
+ul li:nth-child(3n+3) {
+    background: rgba(0,255,255,1);
+    animation: blink3 1.5s linear infinite;
+    animation-delay: .5s;
+}
+
+@keyframes blink3 {
+    0% {
+        background: rgba(0, 255, 255, .2);
+    }
+    50% {
+        background: rgba(0, 255, 255, 1);
+        box-shadow: 0 0 25px rgba(0, 255, 255, 1), 0 0 45px rgba(0, 255, 255, 1);
+    }
+    100% {
+        background: rgba(0, 255, 255, .2);
+    }
+}
+
