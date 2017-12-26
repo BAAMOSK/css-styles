@@ -1,0 +1,59 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', 'Pacifico';
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    background: #ddd;
+    padding: 2%;
+}
+
+.card {
+    height: 100%;
+    width: 30%;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px #aaa;
+    background: white;
+}
+
+.bg {
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(135deg, #ebf1f6 0%,#abd3ee 35%,#89c3eb 64%,#d5ebfb 100%);
+    border-bottom: 3px solid black;
+}
+
+img {
+    border-radius: 100%;
+    border: 3px solid black;
+}
+
+.bio {
+    text-align: center;
+    transform: translateY(-30%);
+}
+
+p {
+    margin: 0 10%;
+}
+
+.social-icons {
+    padding: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    padding: 2%;
+    border-radius: 10%;
+    background: linear-gradient(135deg, #ebf1f6 0%,#abd3ee 35%,#89c3eb 64%,#d5ebfb 100%);
+}
