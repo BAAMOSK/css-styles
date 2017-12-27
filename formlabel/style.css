@@ -1,0 +1,19 @@
+body {
+    margin: 0; 
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    background: none;
+    border: 2px solid black;
+    color: yellow;
+    padding: 15px 40px;
+    font-size: 18px;
+}
+
+input:focus, input:active {
+    outline: none;
+}
