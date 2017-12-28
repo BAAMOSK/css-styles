@@ -48,7 +48,7 @@ img {
 .arrow {
   cursor: pointer;
   position: absolute;
-  top: 15%;
+  top: 45%;
   width: 0;
   height: 0;
   border-style: solid;
