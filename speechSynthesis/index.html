@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <h1>Talk to me!</h1>
+
+  <script>
+    const synth = window.speechSynthesis;
+    const utterThis = new SpeechSynthesisUtterance('Hello Tee');
+
+    const voices = synth.getVoices();
+    const voice = voices.find(voice => voice.name === 'Fiona');
+    
+    utterThis.voice = voice;
+    utterThis.pitch = 1.5;
+    utterThis.rate = 1.2;
+
+    //utterThis.voice = voice;
+    synth.speak(utterThis);
+
+    /*const recognition = new SpeechRecognition();
+    recognition.lang = 'en-US';
+    recognition.interimResults = false;
+
+    recognition.onresult = event => handleResult(event);
+    recognition.onerror = error => handleError(error);*/
+
+  </script>
+</body>
+
