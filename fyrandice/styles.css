@@ -2,15 +2,22 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Raleway';
+  background: gray;
 }
 
 nav {
+  margin: 0;
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
   justify-content: space-around;
   align-items: center;
   background: red;
   width: 100%;
   height: 120px;
+  border-bottom: 1px solid black;
+  z-index: 10;
 }
 
 ul {
@@ -20,11 +27,20 @@ ul {
 ul li {
   flex-direction: row;
   list-style: none;
-  margin: 2%;
+  margin: 0 10%;
   padding: 2%;
   font-family: 'Roboto Mono';
   color: white;
   font-size: 1.8em;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
 }
 
 .logo {
@@ -38,7 +54,7 @@ ul li {
 
 .logo h1 {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   color: white;
   transform: translate(50px, 10px);
   font-family: 'Robot Mono';
@@ -50,15 +66,32 @@ header {
   text-align: center;
 }
 
-.slide {
+.bg-image {
+  height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 1.4;
+  background-image: url('img/header.jpg');  
 }
 
-.slide1 {
-  background-image: url('img/header.jpg');
+.overlay {
+  height: 100vh;
+  width: 100%;
+  background: gray;
+  opacity: 0.5;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.main-text {
+  position: absolute;
+  top: 57%;
+  left: 38%;  
+  z-index: 3;
+  font-size: 2em;
+  color: white;
 }
 
 .slide2 {
@@ -76,3 +109,28 @@ header {
   justify-content: center;
   text-align: center;
 }
+
+#menu {
+  color: white;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.item {
+  display: flex;
+  margin: 0 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.item-name, .item-price {
+  font-size: 2em;
+}
+
+
+
+
