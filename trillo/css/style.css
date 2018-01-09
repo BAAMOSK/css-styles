@@ -70,17 +70,21 @@ body {
     width: 2rem;
     fill: var(--color-gray-dark-3); }
 
-.user-nav__icon {
-  height: 2.25rem;
-  width: 2.25rem; }
-
-.user-nav__user {
-  height: 3.75rem;
-  width: 3.75rem; }
-
-.user-nav__user-photo {
-  height: 3.75rem;
-  border-radius: 50%; }
+.user-nav {
+  display: flex;
+  align-items: center; }
+  .user-nav > * {
+    padding: 0 2rem;
+    cursor: pointer; }
+  .user-nav__icon {
+    height: 2.25rem;
+    width: 2.25rem; }
+  .user-nav__user {
+    height: 3.75rem;
+    width: 3.75rem; }
+  .user-nav__user-photo {
+    height: 3.75rem;
+    border-radius: 50%; }
 
 .container {
   max-width: 120rem;
