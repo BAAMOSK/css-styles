@@ -8,11 +8,13 @@
 
 <body>
   <div class="card">
-    <div class="front">
+    <div class="front active">
+      <div class="rotate-right">&rarr;</div>
       <div class="location">Parkland</div>
       <div class="more">I</div>
       <div class="weather">Cloud</div>
       <h1>8 <sup>o</sup></h1>
+
       <ul class="forecast">
         <li class="day">
           <div class="day">
@@ -39,7 +41,38 @@
          </div>
         </li>
       </ul>
+
+    </div>
+
+    <div class="back">
+      <div class="rotate-left">&larr;</div>
+      <ul>
+        <li>Yesterday</li>
+        <li>Yesterday</li>
+        <li>Yesterday</li>
+        <li>Yesterday</li>
+        <li>Yesterday</li>
+      </ul>
+    
     </div>
   </div>
+
+  <script>
+    let rarr = document.querySelector('.rotate-right');
+    let larr = document.querySelector('.rotate-left');
+    let back = document.querySelector('.back');
+    let front = document.querySelector('.front');
+
+    rarr.addEventListener('click', function() {
+      back.classList.toggle('active');
+      front.classList.toggle('active');
+    });
+    
+    larr.addEventListener('click', function() {
+      back.classList.toggle('active');
+      front.classList.toggle('active');
+    });
+     
+  </script>
 </body>
 
