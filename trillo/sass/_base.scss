@@ -19,6 +19,11 @@
   
 }
 
+$bp-largest: 75em;
+$bp-large: 68.75em;
+$bp-medium: 56.25em;
+
+
 * {
     margin: 0;
     padding: 0;
@@ -31,6 +36,10 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 50%;
+    }
 }
 
 body {
