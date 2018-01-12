@@ -227,6 +227,21 @@ body {
     transform: scale(1);
     box-shadow: none; } }
 
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem; }
+
+.list {
+  list-style: none;
+  margin: 3rem 0;
+  padding: 3rem 0;
+  border-top: var(--line);
+  border-bottom: var(--line);
+  display: flex;
+  flex-wrap: wrap; }
+  .list__item {
+    flex: 0 0 50%;
+    margin-bottom: .7rem; }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -255,6 +270,7 @@ body {
   justify-content: space-between; }
 
 .hotel-view {
+  background-color: white;
   flex: 1; }
 
 .detail {
@@ -271,4 +287,5 @@ body {
   margin-right: 4.5rem; }
 
 .user-reviews {
-  flex: 1; }
+  flex: 1;
+  background-color: var(--color-gray-light-1); }
