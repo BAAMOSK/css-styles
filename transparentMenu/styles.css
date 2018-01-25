@@ -69,7 +69,7 @@ ul li a:hover {
   }
   header ul {
     width: 100%;
-    top: 0;
+    top: -4px;
     display: block;
   }
   header ul li a {
