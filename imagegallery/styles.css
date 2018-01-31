@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;  
+  max-height: 230px;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  object-fit: cover;
+}
+
+.container .box .snake {
+}
